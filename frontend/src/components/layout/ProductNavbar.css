@@ -1,0 +1,40 @@
+.product-navbar {
+    background-color: #030303;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .product-navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .product-navbar ul li {
+    margin: 0;
+  }
+  
+  .product-navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+  }
+  
+  .product-navbar ul li a .icon {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .product-navbar ul li a:hover {
+    color: #ffeb3b;
+    transform: scale(1.1);
+  }
+  
