@@ -12,7 +12,7 @@ import{
 export const getProduct = (keyword ="" , currentPage=1) => async (dispatch) =>{
     try{
         dispatch({type:ALL_PRODUCT_REQUEST});
-        const { data } = await axios.get(`http://localhost:4000/api/v1/products?keyword=${keyword}&page=${currentPage}`);
+        const { data } = await axios.get(`https://shopscape-o8gh.onrender.com/api/v1/products?keyword=${keyword}&page=${currentPage}`);
         console.log(data);
 
         dispatch({
@@ -34,7 +34,7 @@ export const getProductDetails = (id) => async (dispatch) => {
     try {
       dispatch({ type: PRODUCT_DETAILS_REQUEST });
   
-      const { data } = await axios.get(`http://localhost:4000/api/v1/product/${id}`);
+      const { data } = await axios.get(`https://shopscape-o8gh.onrender.com/api/v1/product/${id}`);
       
       dispatch({
         type: PRODUCT_DETAILS_SUCCESS,
